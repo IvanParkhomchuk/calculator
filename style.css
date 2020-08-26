@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #262626;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+input {
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    color: #C4C4C4;
+    user-select: none;
+    outline: none;
+    text-align: right;
+}
+
+.calculator {
+    background: #111;
+    color: #c7c7c7;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+            "display display display display"
+            "c c c divide"
+            "seven eight nine multiply"
+            "four five six minus"
+            "one two three plus"
+            "point zero zero equal"; 
+    align-items: center;
+    justify-content: center;
+    grid-gap: 25px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.button {
+    background: #212121;
+    color: #C4C4C4;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+}
+
+.button:hover {
+    background-color: #1C1C1C;
+}
+
+.button:active {
+    color: #BFBFBF; 
+    background-color: rgba(30, 30, 30, 0.94);
+}
+
+.display {
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.51),
+                -6px -6px 16px rgba(255, 255, 255, 0.05)
+                inset 6px 6px 5px rgba(0, 0, 0, 0.51),
+                inset -6px -6px 5px rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #C4C4C4;
+}
+
+.zero {
+    width: 100%;
+}
+
+.c {
+    width: 100%;
+}
+
+.display {
+    grid-area: display;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.c {
+    grid-area: c;
+}

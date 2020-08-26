@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0" >
+
+        <title>calculator</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- <div id="theme-div">
+            <button onClick="myFunction()" class="theme1"></button>
+            <button onClick="myFunction()" class="theme2"></button>
+        </div> -->
+
+        <div>
+            <form name="calc" class="calculator">
+                <input name="txt" type="text" readonly="" class="display">
+
+                <span class="c button" onClick="document.calc.txt.value = ''">C</span>
+                <span class="divide button" onClick="document.calc.txt.value += '/'">/</span>
+                <span class="seven button" onClick="document.calc.txt.value += '7'">7</span>
+                <span class="eight button" onClick="document.calc.txt.value += '8'">8</span>
+                <span class="nine button" onClick="document.calc.txt.value += '9'">9</span>
+                <span class="multiply button" onClick="document.calc.txt.value += '*'">*</span>
+                <span class="four button" onClick="document.calc.txt.value += '4'">4</span>
+                <span class="five button" onClick="document.calc.txt.value += '5'">5</span>
+                <span class="six button" onClick="document.calc.txt.value += '6'">6</span>
+                <span class="minus button" onClick="document.calc.txt.value += '-'">-</span>
+                <span class="one button" onClick="document.calc.txt.value += '1'">1</span>
+                <span class="two button" onClick="document.calc.txt.value += '2'">2</span>
+                <span class="three button" onClick="document.calc.txt.value += '3'">3</span>
+                <span class="plus button" onClick="document.calc.txt.value += '+'">+</span>
+                <span class="zero button" onClick="document.calc.txt.value += '0'">0</span>
+                <span class="point button" onClick="document.calc.txt.value += '.'">.</span>
+                <span class="equal button" onClick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+            </form>
+        </div>
+    </body>
+</html>
